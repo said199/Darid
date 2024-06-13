@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor{
+    background: #ff7ea8 ;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 20px;
+}
+
+p {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente según sea necesario */
+    padding: 10%;
+    text-align: center;
+    margin: 7% auto;
+}
+
+button{
+    font-size: xx-large ;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    background: #ca79ca ;
+    transform: translate(-100%,0) ;
+}
+
+#noBtn{
+    background: #ca79ca ;
+    position: absolute;
+}
+
+/* Estilos para el modal */
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalContent {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#modalContent img {
+    width: 100%;
+    height: auto;
+}
+
+#mensaje {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón "No" */
+#noBtn {
+    position: absolute;
+    
+}
+
+/* Media Queries para responsividad */
+@media (min-width: 600px) {
+    p {
+        font-size: 2rem;
+        padding: 5%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        
+    }
+
+    #modalContent {
+        width: 50%;
+    }
+
+    #mensaje {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: 2.5rem;
+        padding: 5%;
+    }
+
+    button {
+        font-size: 1.75rem;
+    }
+
+    #modalContent {
+        width: 40%;
+    }
+
+    #mensaje {
+        font-size: 1.75rem;
+    }
+}
